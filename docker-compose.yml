@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+    hello:
+      container_name: 'hello'
+      build:
+        context: .
+        dockerfile: Dockerfile
+      command: sh start.sh
+      volumes: [".:/app"]
